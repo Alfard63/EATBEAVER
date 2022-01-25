@@ -1,0 +1,51 @@
+/* define fonts family */
+
+@font-face {
+    font-family: woody-wood-demo;
+    src: url(./font/woody-wood-demo.regular.otf);
+}
+
+@font-face {
+    font-family: dancing-script;
+    src: url(./font/DancingScript-VariableFont_wght.ttf);
+}
+
+/* header style */
+
+.logo, h1 {
+    font-family: "woody-wood-demo";
+}
+
+.logo_title {
+
+    font-size: 1.6em;
+}
+
+img {
+    width: 1.6em;
+    height: auto;
+    filter: invert(16%) sepia(8%) saturate(2605%) hue-rotate(356deg) brightness(104%) contrast(88%);
+}
+
+nav, .title-block small {
+    font-family: 'dancing-script';
+}
+
+.title-block {
+    background-image: url("./img/beaver\ barrage\ cut.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 25em;
+}
+
+.title {
+    background-color: rgba(0, 0, 0, 0.275);
+    height: 9em;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+
+/* footer style */
