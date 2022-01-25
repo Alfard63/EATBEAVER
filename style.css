@@ -10,6 +10,11 @@
     src: url(./font/DancingScript-VariableFont_wght.ttf);
 }
 
+/* general style */
+body {
+    background: whitesmoke;
+}
+
 /* header style */
 
 .logo, h1 {
@@ -27,24 +32,31 @@ img {
     filter: invert(16%) sepia(8%) saturate(2605%) hue-rotate(356deg) brightness(104%) contrast(88%);
 }
 
-nav, .title-block small {
+nav, .title-block p {
     font-family: 'dancing-script';
+}
+
+nav a.active {
+    border-bottom: 5px green solid;
+}
+nav a:hover {
+    color: green;
 }
 
 .title-block {
     background-image: url("./img/beaver\ barrage\ cut.jpg");
     background-size: cover;
     background-position: center;
-    height: 25em;
 }
 
 .title {
     background-color: rgba(0, 0, 0, 0.275);
-    height: 9em;
+    height: auto;
 }
 
-h1 {
-    font-size: 5em;
+.title h1 {
+    font-size: 5rem;
+    margin: auto;
 }
 
 
