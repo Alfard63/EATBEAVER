@@ -10,9 +10,8 @@
     src: url(./font/DancingScript-VariableFont_wght.ttf);
 }
 
-/* general style */
 body {
-    background: rgb(216, 248, 222);
+    background-color: whitesmoke;
 }
 
 /* header style */
@@ -26,38 +25,53 @@ body {
     font-size: 1.6em;
 }
 
-img {
+.logo img {
     width: 1.6em;
     height: auto;
-    filter: invert(16%) sepia(8%) saturate(2605%) hue-rotate(356deg) brightness(104%) contrast(88%);
+    filter: invert(21%) sepia(100%) saturate(416%) hue-rotate(87deg) brightness(101%) contrast(95%);
 }
 
 nav, .title-block p {
     font-family: 'dancing-script';
 }
 
-nav a.active {
-    border-bottom: 5px green solid;
-}
-nav a:hover {
-    color: green;
-}
-
 .title-block {
-    background-image: url("./img/beaver\ barrage\ cut.jpg");
+    background-image: url("./img/Beaver_dams\,_Whitefish_Channel.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 47em;
 }
 
 .title {
-    background-color: rgba(0, 0, 0, 0.275);
+    background-color: rgba(255, 255, 255, 0.418);
     height: auto;
 }
 
 .title h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: auto;
 }
 
 
+/* header media queries */
+@media screen and (min-width:992px) {
+
+    nav a.active {
+        border-bottom: 5px green solid;
+    }
+
+    nav a:hover {
+        border-bottom: green 5px solid;
+    }   
+    
+    .title h1 {
+        font-size: 5rem;
+        margin: auto;
+    }
+}
+
+
 /* footer style */
+
+
