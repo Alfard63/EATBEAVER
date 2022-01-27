@@ -10,15 +10,25 @@
     src: url(./font/DancingScript-VariableFont_wght.ttf);
 }
 
+
+/* General styles */
+
 body {
     background-color: whitesmoke;
 }
 
-/* header style */
-
-.logo, h1 {
+.logo, h1, footer h2 {
     font-family: "woody-wood-demo";
 }
+
+nav, 
+.title-block p,
+.address p {
+    font-family: 'dancing-script';
+}
+
+
+/* header style */
 
 .logo_title {
 
@@ -29,10 +39,6 @@ body {
     width: 1.6em;
     height: auto;
     filter: invert(21%) sepia(100%) saturate(416%) hue-rotate(87deg) brightness(101%) contrast(95%);
-}
-
-nav, .title-block p {
-    font-family: 'dancing-script';
 }
 
 .title-block {
@@ -55,6 +61,7 @@ nav, .title-block p {
 
 
 /* header media queries */
+
 @media screen and (min-width:992px) {
 
     nav a.active {
@@ -73,6 +80,7 @@ nav, .title-block p {
 
 
 /* footer style */
+
 footer {
     background-color: #333;
     background-image: url('./img/pattern-main-dark.svg');
