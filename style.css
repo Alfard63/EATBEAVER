@@ -68,7 +68,7 @@ nav,
         border-bottom: 5px green solid;
     }
 
-    nav a:hover {
+    nav li a:hover {
         border-bottom: green 5px solid;
     }   
     
