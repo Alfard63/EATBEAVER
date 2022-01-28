@@ -10,54 +10,86 @@
     src: url(./font/DancingScript-VariableFont_wght.ttf);
 }
 
-/* general style */
+
+/* General styles */
+
 body {
-    background: whitesmoke;
+    background-color: whitesmoke;
 }
 
-/* header style */
-
-.logo, h1 {
+.logo, h1, footer h2 {
     font-family: "woody-wood-demo";
 }
+
+nav, 
+.title-block p,
+.address p {
+    font-family: 'dancing-script';
+}
+
+
+/* header style */
 
 .logo_title {
 
     font-size: 1.6em;
 }
 
-img {
+.logo img {
     width: 1.6em;
     height: auto;
-    filter: invert(16%) sepia(8%) saturate(2605%) hue-rotate(356deg) brightness(104%) contrast(88%);
-}
-
-nav, .title-block p {
-    font-family: 'dancing-script';
-}
-
-nav a.active {
-    border-bottom: 5px green solid;
-}
-nav a:hover {
-    color: green;
+    filter: invert(21%) sepia(100%) saturate(416%) hue-rotate(87deg) brightness(101%) contrast(95%);
 }
 
 .title-block {
-    background-image: url("./img/beaver\ barrage\ cut.jpg");
+    background-image: url("./img/Beaver_dams\,_Whitefish_Channel.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    height: 47em;
 }
 
 .title {
-    background-color: rgba(0, 0, 0, 0.275);
+    background-color: rgba(32, 32, 32, 0.418);
     height: auto;
 }
 
 .title h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: auto;
 }
 
 
+/* header media queries */
+
+@media screen and (min-width:992px) {
+
+    nav a.active {
+        border-bottom: 5px green solid;
+    }
+
+    nav a:hover {
+        border-bottom: green 5px solid;
+    }   
+    
+    .title h1 {
+        font-size: 5rem;
+        margin: auto;
+    }
+}
+
+
 /* footer style */
+
+footer {
+    background-color: #333;
+    background-image: url('./img/pattern-main-dark.svg');
+    background-repeat: repeat;
+}
+
+/* styles for index.html */
+
+#qui-sommes-nous {
+    padding-top: 70px;
+    margin-top: -70px;
+}
