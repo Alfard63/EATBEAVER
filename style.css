@@ -102,3 +102,6 @@ footer {
 }
 
 /* styles for event.html */
+.nav-tabs a:hover {
+    background-color:#0dcaf0;
+}
