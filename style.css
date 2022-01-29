@@ -40,13 +40,20 @@ nav,
     height: auto;
     filter: invert(21%) sepia(100%) saturate(416%) hue-rotate(87deg) brightness(101%) contrast(95%);
 }
+.homepage__header {
+    background-image: url("./img/Beaver_dams\,_Whitefish_Channel.jpg");
+}
+
+.eventpage__header {
+    background-image: url("./img/beaver\ barrage.jpg");
+}
 
 .title-block {
-    background-image: url("./img/Beaver_dams\,_Whitefish_Channel.jpg");
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 47em;
+    max-height: 47em;
 }
 
 .title {
@@ -68,7 +75,7 @@ nav,
         border-bottom: 5px green solid;
     }
 
-    nav a:hover {
+    nav li a:hover {
         border-bottom: green 5px solid;
     }   
     
@@ -89,7 +96,9 @@ footer {
 
 /* styles for index.html */
 
-#qui-sommes-nous {
+#qui-sommes-nous, #evenements {
     padding-top: 70px;
     margin-top: -70px;
 }
+
+/* styles for event.html */
