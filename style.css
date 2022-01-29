@@ -53,7 +53,7 @@ nav,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    height: 47em;
+    max-height: 47em;
 }
 
 .title {
@@ -96,7 +96,7 @@ footer {
 
 /* styles for index.html */
 
-#anchor {
+#qui-sommes-nous, #evenements {
     padding-top: 70px;
     margin-top: -70px;
 }
