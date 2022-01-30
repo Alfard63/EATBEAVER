@@ -16,6 +16,66 @@
 </head>
 
 <body class="eventpage bg-light">
+
+    <!-- modals -->
+
+    <div class="modal fade" id="participationFormModal" tabindex="-1" aria-labelledby="participationFormModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="participationFormModalLabel">Formulaire d'inscription</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Vous souhaitez participer et nous vous en remercions. <br>
+                        Merci de compléter le formulaire ci-dessous afin que nous puissions vous recontacter pour vous donner les détails de l'opération.
+                    </p>
+                    <form>
+                        <div class="mb-3">
+                            <label for="inputLastName" class="form-label">Nom</label>
+                            <input type="text" class="form-control" id="inputLastName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputFirstName" class="form-label">Prénom</label>
+                            <input type="text" class="form-control" id="inputFirstName">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputPhoneNumber" class="form-label">A quel numéro pouvons-nous vous joindre?</label>
+                            <input type="tel" class="form-control" id="inputPhoneNumber">
+                        </div>
+                        <div class="mb-3">
+                            <label for="inputMailAdress" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="inputMailAdress">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Valider ma participation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="errorModal" tabindex="-1" aria-labelledby="errorModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="errorModalLabel">Nombre de volontaires atteint</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>
+                        Vous souhaitez participer et nous vous en remercions. <br>
+                        Malheureusement nous avons atteint le nombre maximal de participant.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- content -->
+
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-md-around fixed-top">
             <div class="container-fluid">
@@ -116,7 +176,7 @@
                                             style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
                                             aria-valuemax="100">10/10 volontaires</div>
                                     </div>
-                                    <button type="button" class="btn btn-info disabled">Je Participe</button>
+                                    <button type="button" class="btn btn-info"  data-bs-toggle="modal" data-bs-target="#errorModal">Je Participe</button>
                                 </div>
 
 
@@ -157,7 +217,7 @@
                                             style="width: 100%;" aria-valuenow="100" aria-valuemin="0"
                                             aria-valuemax="100">6/6 volontaires</div>
                                     </div>
-                                    <button type="button" class="btn btn-info disabled">Je Participe</button>
+                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#errorModal">Je Participe</button>
                                 </div>
 
 
@@ -165,7 +225,7 @@
                         </div>
 
                     </div>
-                    <div class="tab-pane fade show" id="fevrier2022">                       
+                    <div class="tab-pane fade show" id="fevrier2022">
                         <div class="row">
                             <div class="col-12 col-lg-2 ps-4 pt-4 pb-2 pb-lg-5">
                                 <div
@@ -200,7 +260,7 @@
                                             style="width: 75%;" aria-valuenow="75" aria-valuemin="0"
                                             aria-valuemax="100">5/8 volontaires</div>
                                     </div>
-                                    <button type="button" class="btn btn-info">Je Participe</button>
+                                    <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#participationFormModal">Je Participe</button>
                                 </div>
 
 
@@ -209,7 +269,7 @@
                     </div>
 
                     <div class="tab-pane fade show text-center" id="mars2022">
-                        <h5 class="fs-2 my-5 py-5"> 
+                        <h5 class="fs-2 my-5 py-5">
                             Pas d'actions pour le moment <br>
                             revenez plus tard
                         </h5>
@@ -241,14 +301,16 @@
 
                     <div class="col-lg-2 col-sm-6 footer-menus">
                         <h4 class="text-center text-lg-start">Liens utiles</h4>
-                        <ul class="px-4 px-lg-0 list-unstyled d-flex d-lg-block justify-content-around align-items-center align-items-lg-start flex-wrap flex-lg-nowrap flex-lg-column">
+                        <ul
+                            class="px-4 px-lg-0 list-unstyled d-flex d-lg-block justify-content-around align-items-center align-items-lg-start flex-wrap flex-lg-nowrap flex-lg-column">
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-home"></i>
                                 <a class="link-light text-decoration-none ps-1 pe-1" href="../index.html">Accueil</a>
                             </li>
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-home"></i>
-                                <a class="link-light text-decoration-none ps-1 pe-1" href="../index.html#qui-sommes-nous">Qui
+                                <a class="link-light text-decoration-none ps-1 pe-1"
+                                    href="../index.html#qui-sommes-nous">Qui
                                     sommes-nous</a>
                             </li>
                             <li class="my-2 flex-grow-1 flex-fill">
@@ -286,7 +348,8 @@
                             <a href="https://fr-fr.facebook.com/"><i class="link-light px-2 fab fa-facebook-f"></i></a>
                             <a href="https://twitter.com/?lang=fr"><i class="link-light px-2 fab fa-twitter"></i></a>
                             <a href="https://fr.linkedin.com/"><i class="link-light px-2 fab fa-linkedin-in"></i></a>
-                            <a href="https://www.instagram.com/?hl=fr"><i class="link-light px-2 fab fa-instagram"></i></a>
+                            <a href="https://www.instagram.com/?hl=fr"><i
+                                    class="link-light px-2 fab fa-instagram"></i></a>
                         </div>
                     </div>
                 </div>
