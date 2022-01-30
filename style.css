@@ -27,6 +27,13 @@ nav,
     font-family: 'dancing-script';
 }
 
+/* index.html page styles */
+
+.carousel img {
+    max-height: 300px;
+    margin: 0 auto;
+}
+
 #qui-sommes-nous {
     padding-top: 80px;
     margin-top: -80px;
