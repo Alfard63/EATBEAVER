@@ -15,7 +15,7 @@
 
 body,
 header .nav {
-    background-color: rgb(225, 226, 223);
+    background-color: rgb(228, 233, 218);
 }
 
 .logo, h1, footer h2 {
@@ -53,12 +53,9 @@ header nav,
     height: auto;
 }
 
-.homepage .logo img {
-    filter: invert(38%) sepia(85%) saturate(403%) hue-rotate(100deg) brightness(92%) contrast(91%);
-}
-
+.homepage .logo img,
 .eventpage .logo img {
-    filter: invert(68%) sepia(82%) saturate(2400%) hue-rotate(145deg) brightness(99%) contrast(92%);
+    filter: invert(38%) sepia(85%) saturate(403%) hue-rotate(100deg) brightness(92%) contrast(91%);
 }
 
 .homepage .title-block {
@@ -74,19 +71,16 @@ header nav,
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    max-height: 47em;
+    max-height: 40em;
 }
 
 .title {
         height: auto;
 }
 
-.homepage .title {
-    background-color: rgba(255, 255, 255, 0.555);
-}
-
+.homepage .title,
 .eventpage .title {
-    background-color: rgba(88, 88, 88, 0.555);
+    background-color: rgba(255, 255, 255, 0.555);
 }
 
 .title h1 {
@@ -100,14 +94,11 @@ header nav,
 @media screen and (min-width:992px) {
 
     .homepage nav a.active, 
-    .homepage nav li a:hover {
-        border-bottom: 5px #198754 solid;
-    }
-    
+    .homepage nav li a:hover,
     .eventpage nav a.active, 
     .eventpage nav li a:hover {
-        border-bottom: 5px #0dcaf0 solid;
-    } 
+        border-bottom: 5px #198754 solid;
+    }
     
     .title h1 {
         font-size: 5rem;
