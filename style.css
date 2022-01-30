@@ -27,6 +27,11 @@ nav,
     font-family: 'dancing-script';
 }
 
+#qui-sommes-nous {
+    padding-top: 80px;
+    margin-top: -80px;
+}
+
 
 /* header style */
 
@@ -38,13 +43,21 @@ nav,
 .logo img {
     width: 1.6em;
     height: auto;
+}
+
+.homepage .logo img {
+    filter: invert(38%) sepia(85%) saturate(403%) hue-rotate(100deg) brightness(92%) contrast(91%);
+}
+
+.eventpage .logo img {
     filter: invert(68%) sepia(82%) saturate(2400%) hue-rotate(145deg) brightness(99%) contrast(92%);
 }
-.homepage__header {
+
+.homepage .title-block {
     background-image: url("./img/Beaver_dams\,_Whitefish_Channel.jpg");
 }
 
-.eventpage__header {
+.eventpage .title-block {
     background-image: url("./img/beaver\ barrage.jpg");
 }
 
@@ -57,8 +70,15 @@ nav,
 }
 
 .title {
+        height: auto;
+}
+
+.homepage .title {
+    background-color: rgba(255, 255, 255, 0.555);
+}
+
+.eventpage .title {
     background-color: rgba(88, 88, 88, 0.555);
-    height: auto;
 }
 
 .title h1 {
@@ -71,8 +91,13 @@ nav,
 
 @media screen and (min-width:992px) {
 
-    nav a.active, 
-    nav li a:hover {
+    .homepage nav a.active, 
+    .homepage nav li a:hover {
+        border-bottom: 5px #198754 solid;
+    }
+    
+    .eventpage nav a.active, 
+    .eventpage nav li a:hover {
         border-bottom: 5px #0dcaf0 solid;
     } 
     
@@ -94,12 +119,3 @@ footer {
     background-image: url('./img/pattern-main-dark.svg');
     background-repeat: repeat;
 }
-
-/* styles for index.html */
-
-#qui-sommes-nous, #evenements {
-    padding-top: 70px;
-    margin-top: -70px;
-}
-
-/* styles for event.html */
