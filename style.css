@@ -83,6 +83,11 @@ nav,
         font-size: 5rem;
         margin: auto;
     }
+
+    .title-block {
+        max-height: 47em;
+    }
+    
 }
 
 
