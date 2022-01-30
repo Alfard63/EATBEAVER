@@ -13,15 +13,16 @@
 
 /* General styles */
 
-body {
-    background-color: whitesmoke;
+body,
+header .nav {
+    background-color: rgb(225, 226, 223);
 }
 
 .logo, h1, footer h2 {
     font-family: "woody-wood-demo";
 }
 
-nav, 
+header nav, 
 .title-block p,
 .address p {
     font-family: 'dancing-script';

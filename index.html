@@ -18,11 +18,11 @@
     <title>EATBEAVER - POUR SAUVER UN ARBRE MANGEZ UN CASTOR</title>
 </head>
 
-<body class=" homepage bg-light">
+<body class=" homepage">
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-md-around">
-            <div class="container-fluid">
-                <a href="#" class=" navbar-brand d-flex align-items-center justify-content-center logo ms-2">
+        <nav class="navbar navbar-expand-lg navbar-light justify-content-md-around p-0 sticky-top">
+            <div class="container-fluid p-0">
+                <a href="#" class=" navbar-brand d-flex align-items-center justify-content-center logo ms-2 p-0">
                     <img class="logo_img" src="../img/beaver.svg" alt="beaver logo">
                     <span class="ms-2 mt-1 logo_title text-success">EATBEAVER</span>
                 </a>
@@ -34,18 +34,19 @@
                 <div class="collapse navbar-collapse justify-content-md-end pe-md-5 navbar-light fs-4 fw-bold"
                     id="navbarSupportedContent">
                     <ul class="navbar-nav mb-2 mb-lg-0">
-                        <li class="nav-item mx-1"><a class="nav-link active" href="index.html">Accueil</a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="#qui-sommes-nous">Qui sommes-nous</a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="./pages/maintenance.html">Articles</a>
-                        <li class="nav-item mx-1"><a class="nav-link" href="./pages/event.html">Evènements</a></li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="./pages/maintenance.html">Témoignages</a>
+                        <li class="nav-item mx-1"><a class="pb-0 nav-link active" href="index.html">Accueil</a></li>
+                        <li class="nav-item mx-1"><a class="pb-0 nav-link" href="#qui-sommes-nous">Qui sommes-nous</a>
                         </li>
-                        <li class="nav-item mx-1"><a class="nav-link" href="./pages/maintenance.html">Contact</a></li>
+                        <li class="nav-item mx-1"><a class="pb-0 nav-link" href="#actualites">Articles</a>
+                        <li class="nav-item mx-1"><a class="pb-0 nav-link" href="./pages/event.html">Evènements</a></li>
+                        <li class="nav-item mx-1"><a class="pb-0 nav-link" href="#temoignages">Témoignages</a>
+                        </li>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <div class="w-100 d-flex align-items-center justify-content-center mt-5 mb-auto title-block">
+        <div class="w-100 d-flex align-items-center justify-content-center title-block mt-1">
             <div
                 class="d-flex flex-column align-items-center justify-content-center title text-center text-success p-3 p-md-5 fs-1 my-5">
                 <h1 class="pb-2">EATBEAVER</h1>
@@ -56,17 +57,25 @@
         </div>
     </header>
 
-    <main class="container-fluid">
-        <div class="row justify-content-lg-between mt-3 mt-lg-5">
-            <section class="order-1 order-lg-0 col-12 col-md-12 col-lg-8 ps-lg-5">
-                <article class="col-12 col-md-12 col-lg-10 mb-2 mb-lg-4" id="qui-sommes-nous">
-                    <h2 class="fs-1 fw-bold text-dark">QUI SOMMES-NOUS</h2>
+    <main class="mt-2 mt-lg-5">
+        <div class="row justify-content-lg-between">
+            <section class="col-12 col-md-12 col-lg-8">
+
+                <div class="me-5">
+                    <h2 class="fs-1 fw-bold bg-success text-light ps-5 mt-3 mb-3 mt-lg-0 me-5">QUI SOMMES-NOUS</h2>
+                </div>
+
+                <article class="col-12 col-md-12 col-lg-10 ms-3 mb-2 mb-lg-4" id="qui-sommes-nous">
                     <p>
-                        <b>EATBEAVER</b> est une association aidant la population à se protéger des dégâts provoqués
+                        <strong class="text-success">EATBEAVER</strong> est une association aidant la population à se
+                        protéger des dégâts provoqués
                         par les colonies de castor. <br>
                         Nous aidons financiairement les propriaitaires de terrain qui en font la demande et les
                         aidons à la mise en place des mesures de protection.
                     </p>
+                    <p class="my-2 mt-lg-3 mb-lg-5 text-center text-success"><strong>Nos bénévoles sont présents en
+                            France, Belgique et la
+                            Suisse.</strong></p>
                     <div class="row justify-content-center justify-content-lg-around row-cols-2">
                         <div class="col">
                             <div class="card h-100">
@@ -88,15 +97,15 @@
                             </div>
                         </div>
                     </div>
-                    <p class="my-2 mt-lg-3 mb-lg-5 text-center">Nos bénévoles sont présents en France, Belgique et la
-                        Suisse.</p>
-
                 </article>
 
-                <h2 class="fs-1 fw-bold text-dark">ACTUALITES</h2>
-                <article class="col-12 col-md-12 col-lg-10 mt-2 mt-lg-4">
-                    <div class="">
-                        <h3 class="">Les Castors européens occasionnent des dégâts aux cultures</h5>
+                <div class="me-5">
+                    <h2 class="fs-1 fw-bold bg-success text-light ps-5 mt-3 mb-3 mt-lg-0 me-5" id="actualites">ACTUALITES</h2>
+                </div>
+
+                <article class="col-12 col-md-12 col-lg-10 ms-3 mt-2 mt-lg-4">
+                    <div>
+                        <h3 class="text-success">Les Castors européens occasionnent des dégâts aux cultures</h5>
                             <img src="./img/IMG_9748_2020-08-17_13_Traces-Indices-Castor_Champ-Mais2018_.jpg"
                                 width="50%" class="float-lg-start mx-lg-2" alt="dégats champs castor">
                             <p class="">Les Castors européens font un
@@ -107,7 +116,7 @@
                                 fois sorti des salons parisiens, le castor n'est pas aimé.</p>
 
                     </div>
-                    <h5 class="">Quelles sont les mesures à prendre.</h5>
+                    <h5 class="text-success">Quelles sont les mesures à prendre.</h5>
                     <p>Quelques mesures peuvent être prises pour limiter ces "dégâts". <br>
                         - laisser un corridor vert en bordure de cours d'eau, exempt de cultures (céréales, arbres
                         de rente, arbres fruitiers, etc.) 10 ou 20 mètres suffisent largement pour éviter les
@@ -128,9 +137,18 @@
                     </p>
                     <p class=""><small class="text-muted">Last updated 3 mins ago</small></p>
                 </article>
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                      <li class="page-item"><a class="page-link" href="#">précédent</a></li>
+                      <li class="page-item"><a class="page-link active">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item"><a class="page-link" href="#">suivant</a></li>
+                    </ul>
+                  </nav>
             </section>
-            <aside class="order-0 order-lg-1 col-12 col-lg-4 m-3 m-lg-0 px-lg-2">
-                <div class="container-fluid col-lg-12 mb-lg-4">
+            <aside class="col-12 col-lg-4 px-lg-2">
+                <div class="container-fluid col-lg-12 mb-4">
                     <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0"
@@ -171,8 +189,11 @@
                         </button>
                     </div>
                 </div>
-                <div class="d-none d-lg-block">
-                    <h4>Derniers témoignages</h4>
+                <div>
+                    <div>
+                        <h4 class="text-light bg-success ps-2 me-5 me-lg-0" id="temoignages">DERNIERS TEMOIGNAGES</h4>
+                    </div>
+                    
                     <div class="mb-4 col-lg-12">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
@@ -187,7 +208,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="w-75 my-3 mx-auto">
+                    <hr class="w-75 my-3 mx-auto text-success pt-1">
                     <div class="mb-4 col-lg-12">
                         <div class="card bg-transparent border-0">
                             <div class="card-body">
@@ -199,7 +220,7 @@
                             </div>
                         </div>
                     </div>
-                    <hr class="w-75 my-3 mx-auto">
+                    <hr class="w-75 my-3 mx-auto text-success pt-1">
 
                     <div class="mb-4 col-lg-12">
                         <div class="card bg-transparent border-0">
@@ -223,23 +244,11 @@
         <div class="footer-top mt-1 mt-lg-3">
             <div class="container mt-1 mt-lg-3">
                 <div class="row justify-content-around">
-                    <div class="col-lg-3 col-sm-6 text-center">
-                        <div class="address">
-                            <h4>EATBEAVER</h4>
-                            <p class="mb-4 fs-5">
-                                38 chemin du Ragondin <br>
-                                08362 Fond-le-Ruisseau <br>
-                                France
-                            </p>
-                            <p class="fs-5"><strong>Téléphone:</strong> +33 4.99.99.99.99</p>
-                            <p class="fs-5"><strong>Email:</strong> alfard.dev@gmail.com</p>
-                        </div>
-                    </div>
 
                     <div class="col-lg-2 col-sm-6 footer-menus">
                         <h4 class="text-center text-lg-start">Liens utiles</h4>
                         <ul
-                            class="px-4 px-lg-0 list-unstyled d-flex d-lg-block justify-content-around align-items-center align-items-lg-start flex-wrap flex-lg-nowrap flex-lg-column">
+                            class="px-5 px-lg-0 list-unstyled d-flex d-lg-block justify-content-around align-items-center align-items-lg-start flex-wrap flex-lg-nowrap flex-lg-column">
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-home"></i>
                                 <a class="link-light text-decoration-none ps-1 pe-1" href="#">Accueil</a>
@@ -252,7 +261,7 @@
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-newspaper"></i>
                                 <a class="link-light text-decoration-none ps-1 pe-1"
-                                    href="./pages/maintenance.html">Acticles</a>
+                                    href="#actualites">Acticles</a>
                             </li>
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-calendar-day"></i>
@@ -262,14 +271,22 @@
                             <li class="my-2 flex-grow-1 flex-fill">
                                 <i class="fas fa-comment"></i>
                                 <a class="link-light text-decoration-none ps-1 pe-1"
-                                    href="./pages/maintenance.html">Témoignages</a>
-                            </li>
-                            <li class="my-2 flex-grow-1 flex-fill">
-                                <i class="fas fa-envelope"></i>
-                                <a class="link-light text-decoration-none ps-1 pe-1"
-                                    href="./pages/maintenance.html">Contact</a>
+                                    href="#temoignages">Témoignages</a>
                             </li>
                         </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-sm-6 text-center">
+                        <div class="address">
+                            <h4>EATBEAVER</h4>
+                            <p class="mb-4 fs-5">
+                                38 chemin du Ragondin <br>
+                                08362 Fond-le-Ruisseau <br>
+                                France
+                            </p>
+                            <p class="fs-5"><strong>Téléphone:</strong> +33 4.99.99.99.99</p>
+                            <p class="fs-5"><strong>Email:</strong> alfard.dev@gmail.com</p>
+                        </div>
                     </div>
 
                     <div class="col-lg-4 col-sm-6 text-center newsletter">
